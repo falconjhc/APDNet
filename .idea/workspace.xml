@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1fbedab-63df-4489-bc8c-596aee5e6bb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/sdnet_config_multimodalcardiac-base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/sdnet_config_multimodalcardiac-test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/unet_config_multimodalcardiac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loaders/multimodalcardiac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/InfarctionSeg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InfarctionSeg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks/sdnet_image_callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks/sdnet_image_callback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/rohan/sdnet_config_rohan-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/rohan/sdnet_config_rohan-base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/rohan/unet_config_rohan.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/rohan/unet_config_rohan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/costs.py" beforeDir="false" afterPath="$PROJECT_DIR$/costs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/base_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/base_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/loader_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/loader_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_executors/base_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/base_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_executors/sdnet_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/sdnet_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sdnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sdnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WREkfueHMhlNPpn3ESKbhMHsy8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/configuration/toy" />
+      <recent name="$PROJECT_DIR$/configuration/rohan" />
+      <recent name="$PROJECT_DIR$/configuration/liverct" />
+      <recent name="$PROJECT_DIR$/configuration/kits" />
+      <recent name="$PROJECT_DIR$/configuration/cmr" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="experiment" type="PythonConfigurationType" factoryName="Python">
+      <module name="InfarctionSeg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment.py" />
+      <option name="PARAMETERS" value="--config sdnet_config_multimodalcardiac-base --split 0 --l_mix 1-1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="anatomy_modality_decomposition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1fbedab-63df-4489-bc8c-596aee5e6bb8" name="Default Changelist" comment="" />
+      <created>1579104151986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579104151986</updated>
+      <workItem from="1579104153948" duration="473000" />
+      <workItem from="1579104742251" duration="6132000" />
+      <workItem from="1579114271254" duration="2262000" />
+      <workItem from="1579116583271" duration="1694000" />
+      <workItem from="1579118964054" duration="354000" />
+      <workItem from="1579170505830" duration="220000" />
+      <workItem from="1579187541622" duration="5000" />
+      <workItem from="1579188682582" duration="5933000" />
+      <workItem from="1579196092185" duration="1000" />
+      <workItem from="1579196100475" duration="74000" />
+      <workItem from="1579196182393" duration="795000" />
+      <workItem from="1579196983149" duration="8328000" />
+      <workItem from="1579258551307" duration="4325000" />
+      <workItem from="1579263111730" duration="7629000" />
+      <workItem from="1579279867763" duration="21000" />
+      <workItem from="1579449588049" duration="456000" />
+      <workItem from="1579450058421" duration="3737000" />
+      <workItem from="1579517151641" duration="145000" />
+      <workItem from="1579517358252" duration="1000" />
+      <workItem from="1579517374117" duration="1927000" />
+      <workItem from="1579519352219" duration="9376000" />
+      <workItem from="1579531888308" duration="1299000" />
+      <workItem from="1579533585920" duration="473000" />
+      <workItem from="1579534304372" duration="373000" />
+      <workItem from="1579534731710" duration="15000" />
+      <workItem from="1579534766077" duration="5000" />
+      <workItem from="1579534784122" duration="675000" />
+      <workItem from="1579535524035" duration="431000" />
+      <workItem from="1579536149526" duration="1180000" />
+      <workItem from="1579537389437" duration="116000" />
+      <workItem from="1579537507647" duration="32000" />
+      <workItem from="1579537573506" duration="366000" />
+      <workItem from="1579537969368" duration="2830000" />
+      <workItem from="1579602753729" duration="4000" />
+      <workItem from="1579602783914" duration="252000" />
+      <workItem from="1579604101525" duration="76000" />
+      <workItem from="1579604656127" duration="31000" />
+      <workItem from="1579604712472" duration="1089000" />
+      <workItem from="1579609190309" duration="8000" />
+      <workItem from="1579609231784" duration="7078000" />
+      <workItem from="1579627631340" duration="1048000" />
+      <workItem from="1579629093753" duration="986000" />
+      <workItem from="1579698698483" duration="8123000" />
+      <workItem from="1579776330520" duration="242000" />
+      <workItem from="1579783888775" duration="3101000" />
+      <workItem from="1579809224601" duration="551000" />
+      <workItem from="1579863390353" duration="469000" />
+      <workItem from="1579863938512" duration="5838000" />
+      <workItem from="1579912139261" duration="24000" />
+      <workItem from="1579912186138" duration="896000" />
+      <workItem from="1579943212403" duration="1109000" />
+      <workItem from="1580045318802" duration="4302000" />
+      <workItem from="1580121383757" duration="2239000" />
+      <workItem from="1580143900603" duration="1888000" />
+      <workItem from="1580481574800" duration="978000" />
+      <workItem from="1580483375455" duration="3000" />
+      <workItem from="1582108928782" duration="778000" />
+      <workItem from="1582110855455" duration="1411000" />
+      <workItem from="1582112917801" duration="5000" />
+      <workItem from="1582112926907" duration="40000" />
+      <workItem from="1582112975850" duration="3000" />
+      <workItem from="1582112996572" duration="4000" />
+      <workItem from="1582113009836" duration="283000" />
+      <workItem from="1582114566141" duration="1399000" />
+      <workItem from="1582116405222" duration="11486000" />
+      <workItem from="1582131968098" duration="7186000" />
+      <workItem from="1582140203841" duration="541000" />
+      <workItem from="1582143888503" duration="808000" />
+      <workItem from="1582193176105" duration="1769000" />
+      <workItem from="1582196053906" duration="13582000" />
+      <workItem from="1582214156992" duration="3069000" />
+      <workItem from="1582223587007" duration="6413000" />
+      <workItem from="1582235134860" duration="1398000" />
+      <workItem from="1582237475736" duration="510000" />
+      <workItem from="1582242481521" duration="320000" />
+      <workItem from="1582242813756" duration="2881000" />
+      <workItem from="1582284997096" duration="1928000" />
+      <workItem from="1582313178571" duration="598000" />
+      <workItem from="1582376072231" duration="10007000" />
+      <workItem from="1582404817725" duration="3272000" />
+      <workItem from="1582419504702" duration="773000" />
+      <workItem from="1582450491455" duration="381000" />
+      <workItem from="1582455602423" duration="6173000" />
+      <workItem from="1582543452928" duration="16060000" />
+      <workItem from="1582627935589" duration="3067000" />
+      <workItem from="1582641494848" duration="542000" />
+      <workItem from="1582709470479" duration="17000" />
+      <workItem from="1582715947796" duration="2917000" />
+      <workItem from="1582718908171" duration="14249000" />
+      <workItem from="1582761026817" duration="33000" />
+      <workItem from="1582761070645" duration="25000" />
+      <workItem from="1582761105694" duration="5528000" />
+      <workItem from="1582807306904" duration="335000" />
+      <workItem from="1582807810921" duration="21000" />
+      <workItem from="1582808026815" duration="5055000" />
+      <workItem from="1582831554015" duration="8483000" />
+      <workItem from="1582845355525" duration="474000" />
+      <workItem from="1582884343486" duration="4117000" />
+      <workItem from="1582909115154" duration="2000" />
+      <workItem from="1583001737281" duration="46344000" />
+      <workItem from="1583078392335" duration="587000" />
+      <workItem from="1583110684528" duration="2257000" />
+      <workItem from="1583149141941" duration="4533000" />
+      <workItem from="1583162938237" duration="373000" />
+      <workItem from="1583163548611" duration="1119000" />
+      <workItem from="1583165219957" duration="667000" />
+      <workItem from="1583192430012" duration="688000" />
+      <workItem from="1583240526314" duration="5000" />
+      <workItem from="1583240534115" duration="194000" />
+      <workItem from="1583240760900" duration="565000" />
+      <workItem from="1583258794264" duration="1723000" />
+      <workItem from="1583318781717" duration="12000" />
+      <workItem from="1583327720347" duration="337000" />
+      <workItem from="1583337679153" duration="445000" />
+      <workItem from="1583350811275" duration="5000" />
+      <workItem from="1583350820071" duration="583000" />
+      <workItem from="1583356682119" duration="383000" />
+      <workItem from="1583360224707" duration="336000" />
+      <workItem from="1583412308604" duration="45000" />
+      <workItem from="1583412356600" duration="1773000" />
+      <workItem from="1583419911670" duration="141000" />
+      <workItem from="1583489593021" duration="2000" />
+      <workItem from="1583490886841" duration="5000" />
+      <workItem from="1583498139259" duration="2000" />
+      <workItem from="1583498143552" duration="618000" />
+      <workItem from="1583499194626" duration="507000" />
+      <workItem from="1583499792443" duration="161000" />
+      <workItem from="1583500381829" duration="10000" />
+      <workItem from="1583500407444" duration="2000" />
+      <workItem from="1583501113726" duration="9000" />
+      <workItem from="1583501142977" duration="281000" />
+      <workItem from="1583501540306" duration="476000" />
+      <workItem from="1583511215453" duration="1210000" />
+      <workItem from="1583523215436" duration="4287000" />
+      <workItem from="1583539293325" duration="439000" />
+      <workItem from="1583604056620" duration="930000" />
+      <workItem from="1583606517365" duration="147000" />
+      <workItem from="1583608861547" duration="312000" />
+      <workItem from="1583611579724" duration="762000" />
+      <workItem from="1583677193905" duration="676000" />
+      <workItem from="1583683174394" duration="2989000" />
+      <workItem from="1583703475527" duration="4479000" />
+      <workItem from="1583714849590" duration="437000" />
+      <workItem from="1583773439366" duration="15000" />
+      <workItem from="1583773761023" duration="67000" />
+      <workItem from="1583782766821" duration="536000" />
+      <workItem from="1583836448113" duration="20000" />
+      <workItem from="1583847575067" duration="250000" />
+      <workItem from="1583847945190" duration="44000" />
+      <workItem from="1583849469953" duration="266000" />
+      <workItem from="1583849843293" duration="3000" />
+      <workItem from="1583850353837" duration="1310000" />
+      <workItem from="1583860976054" duration="8000" />
+      <workItem from="1583953426889" duration="1304000" />
+      <workItem from="1584105216681" duration="180000" />
+      <workItem from="1584141446893" duration="650000" />
+      <workItem from="1584230397010" duration="3000" />
+      <workItem from="1584299980354" duration="39000" />
+      <workItem from="1584704870323" duration="372000" />
+      <workItem from="1584706181330" duration="1171000" />
+      <workItem from="1584711748202" duration="9637000" />
+      <workItem from="1584721838561" duration="5544000" />
+      <workItem from="1584729892975" duration="16395000" />
+      <workItem from="1584803891226" duration="46000" />
+      <workItem from="1584803965105" duration="209000" />
+      <workItem from="1584877944450" duration="1051000" />
+      <workItem from="1584885888085" duration="2139000" />
+      <workItem from="1584894020299" duration="812000" />
+      <workItem from="1584910788194" duration="731000" />
+      <workItem from="1584916947640" duration="1000" />
+      <workItem from="1584917260848" duration="673000" />
+      <workItem from="1584955313583" duration="1048000" />
+      <workItem from="1584967793021" duration="1091000" />
+      <workItem from="1584979020374" duration="6000" />
+      <workItem from="1584979053969" duration="789000" />
+      <workItem from="1584994838869" duration="695000" />
+      <workItem from="1585042354686" duration="671000" />
+      <workItem from="1585072875271" duration="774000" />
+      <workItem from="1585075244492" duration="165000" />
+      <workItem from="1585127701161" duration="12000" />
+      <workItem from="1585127725213" duration="200000" />
+      <workItem from="1585129293650" duration="718000" />
+      <workItem from="1585139614447" duration="1106000" />
+      <workItem from="1585174176114" duration="566000" />
+      <workItem from="1585176137694" duration="2889000" />
+      <workItem from="1585179071273" duration="1421000" />
+      <workItem from="1585266951765" duration="1095000" />
+      <workItem from="1585268699294" duration="3101000" />
+      <workItem from="1585275536360" duration="348000" />
+      <workItem from="1585404898808" duration="8346000" />
+      <workItem from="1585428317772" duration="3578000" />
+      <workItem from="1585471898710" duration="4173000" />
+      <workItem from="1585479329640" duration="4735000" />
+      <workItem from="1585504231414" duration="1416000" />
+      <workItem from="1585559174259" duration="15000" />
+      <workItem from="1585562020566" duration="3566000" />
+      <workItem from="1585567424836" duration="3000" />
+      <workItem from="1585569494373" duration="378000" />
+      <workItem from="1585731217863" duration="7252000" />
+      <workItem from="1585753732387" duration="2792000" />
+      <workItem from="1585773208457" duration="4908000" />
+      <workItem from="1585817588838" duration="463000" />
+      <workItem from="1585841761934" duration="552000" />
+      <workItem from="1585856083169" duration="1304000" />
+      <workItem from="1585859135758" duration="17000" />
+      <workItem from="1585865623959" duration="1113000" />
+      <workItem from="1585873026817" duration="793000" />
+      <workItem from="1586010057614" duration="14690000" />
+      <workItem from="1586039829769" duration="660000" />
+      <workItem from="1586115502487" duration="48000" />
+      <workItem from="1586157533791" duration="31000" />
+      <workItem from="1586180874380" duration="1471000" />
+      <workItem from="1586308222309" duration="2133000" />
+      <workItem from="1586441758286" duration="660000" />
+      <workItem from="1586547311925" duration="1021000" />
+      <workItem from="1586945070677" duration="15000" />
+      <workItem from="1593181471066" duration="159000" />
+      <workItem from="1593182998710" duration="1415000" />
+      <workItem from="1593190898690" duration="289000" />
+      <workItem from="1593213965516" duration="5000" />
+      <workItem from="1593251685120" duration="2000" />
+      <workItem from="1593346171080" duration="1916000" />
+      <workItem from="1593351890469" duration="1871000" />
+      <workItem from="1593354046021" duration="8699000" />
+      <workItem from="1593363524524" duration="9952000" />
+      <workItem from="1593376889149" duration="2646000" />
+      <workItem from="1593379777980" duration="2601000" />
+      <workItem from="1593382873247" duration="3975000" />
+      <workItem from="1593387375160" duration="1801000" />
+      <workItem from="1593390274655" duration="6325000" />
+      <workItem from="1593396848697" duration="397000" />
+      <workItem from="1593397821569" duration="4000" />
+      <workItem from="1593397828719" duration="344000" />
+      <workItem from="1593420173129" duration="1205000" />
+      <workItem from="1593443688796" duration="327000" />
+      <workItem from="1593466603284" duration="486000" />
+      <workItem from="1593467109151" duration="371000" />
+      <workItem from="1593467617519" duration="253000" />
+      <workItem from="1593513924579" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="353" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593420739304">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state x="353" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593420739304" />
+    <state x="-1071" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1636.1027@-1366.23.1366.1001" timestamp="1585873441618" />
+    <state x="354" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586038384856" />
+    <state x="354" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585569599484" />
+    <state width="1590" height="374" key="GridCell.Tab.0.bottom" timestamp="1593467488346">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
+    <state width="1594" height="2" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890711" />
+    <state width="1596" height="403" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422019" />
+    <state width="1594" height="2" key="GridCell.Tab.0.bottom/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
+    <state width="1590" height="374" key="GridCell.Tab.0.center" timestamp="1593467488346">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
+    <state width="1594" height="2" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890710" />
+    <state width="1596" height="403" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
+    <state width="1594" height="2" key="GridCell.Tab.0.center/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
+    <state width="1590" height="374" key="GridCell.Tab.0.left" timestamp="1593467488345">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488345" />
+    <state width="1594" height="2" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890710" />
+    <state width="1596" height="403" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
+    <state width="1594" height="2" key="GridCell.Tab.0.left/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363585" />
+    <state width="1590" height="374" key="GridCell.Tab.0.right" timestamp="1593467488346">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
+    <state width="1594" height="2" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890711" />
+    <state width="1596" height="403" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
+    <state width="1594" height="2" key="GridCell.Tab.0.right/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
+    <state width="1590" height="374" key="GridCell.Tab.1.bottom" timestamp="1593467488348">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488348" />
+    <state width="1594" height="486" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
+    <state width="1596" height="403" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
+    <state width="1594" height="486" key="GridCell.Tab.1.bottom/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
+    <state width="1590" height="374" key="GridCell.Tab.1.center" timestamp="1593467488347">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
+    <state width="1594" height="486" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
+    <state width="1596" height="403" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
+    <state width="1594" height="486" key="GridCell.Tab.1.center/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
+    <state width="1590" height="374" key="GridCell.Tab.1.left" timestamp="1593467488347">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
+    <state width="1594" height="486" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
+    <state width="1596" height="403" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422019" />
+    <state width="1594" height="486" key="GridCell.Tab.1.left/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363567" />
+    <state width="1590" height="374" key="GridCell.Tab.1.right" timestamp="1593467488347">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1590" height="374" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
+    <state width="1594" height="486" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
+    <state width="1596" height="403" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
+    <state width="1594" height="486" key="GridCell.Tab.1.right/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
+    <state x="474" y="267" key="PyMappingSimpleResolveDialog" timestamp="1593467236088">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state x="474" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467236088" />
+    <state x="475" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586024918888" />
+    <state x="476" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585566964337" />
+    <state x="57" y="187" width="1176" height="722" key="SettingsEditor" timestamp="1593395917158">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state x="-1318" y="183" width="1176" height="722" key="SettingsEditor/-1366.23.1366.1001/0.23.1633.1027@-1366.23.1366.1001" timestamp="1593181628902" />
+    <state x="57" y="187" key="SettingsEditor/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593395917158" />
+    <state x="191" y="166" key="SettingsEditor/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585404922702" />
+    <state x="-1328" y="23" width="1328" height="922" maximized="true" key="dock-window-1" timestamp="1593513954773">
+      <screen x="-1366" y="23" width="1366" height="1001" />
+    </state>
+    <state x="-1328" y="23" width="1328" height="922" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593513954773" />
+    <state x="-1366" y="91" width="1300" height="980" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586945085803" />
+    <state x="-1360" y="37" width="1315" height="949" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567427795" />
+    <state x="0" y="49" width="1366" height="1001" key="dock-window-1/0.23.1636.1027@0.23.1636.1027" timestamp="1585748129567" />
+    <state x="0" y="49" width="1366" height="1001" key="dock-window-1/0.23.1638.1027@0.23.1638.1027" timestamp="1585042361438" />
+    <state x="-1366" y="35" width="1351" height="975" maximized="true" key="dock-window-2" timestamp="1593354530046">
+      <screen x="-1366" y="23" width="1366" height="1001" />
+    </state>
+    <state x="-1366" y="35" width="1351" height="975" maximized="true" key="dock-window-2/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593354530046" />
+    <state x="-1366" y="23" width="1366" height="1001" key="dock-window-2/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586028801151" />
+    <state x="337" y="227" width="1001" height="555" key="find.popup" timestamp="1586034470426">
+      <screen x="0" y="23" width="1636" height="1027" />
+    </state>
+    <state x="337" y="227" width="1001" height="555" key="find.popup/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586034470426" />
+    <state x="337" y="227" width="1002" height="555" key="find.popup/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585479053714" />
+    <state x="337" y="227" width="1002" height="555" key="find.popup/0.23.1638.1027@0.23.1638.1027" timestamp="1584878088287" />
+    <state x="-823" y="281" width="585" height="525" key="ftp.server.browser" timestamp="1593181625371">
+      <screen x="-1366" y="23" width="1366" height="1001" />
+    </state>
+    <state x="-823" y="281" width="585" height="525" key="ftp.server.browser/-1366.23.1366.1001/0.23.1633.1027@-1366.23.1366.1001" timestamp="1593181625371" />
+    <state x="390" y="250" width="856" height="694" key="search.everywhere.popup" timestamp="1593357004963">
+      <screen x="0" y="23" width="1633" height="1027" />
+    </state>
+    <state x="390" y="250" width="856" height="694" key="search.everywhere.popup/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593357004963" />
+    <state x="391" y="250" width="858" height="694" key="search.everywhere.popup/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585406033612" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/loaders/liverct.py</url>
+          <line>307</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/loaders/rohan.py</url>
+          <line>239</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/callbacks/sdnet_callback.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>212</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/loaders/toy.py</url>
+          <line>274</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/experiment.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>924</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>566</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>867</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>783</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>798</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>629</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>714</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_executors/sdnet_executor.py</url>
+          <line>420</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/loaders/multimodalcardiac.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/loaders/multimodalcardiac.py</url>
+          <line>216</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation.coverage" NAME="test_unet_segmentation Coverage Results" MODIFIED="1579453296252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PSD_Net$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1593396402251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation_inf.coverage" NAME="test_unet_segmentation_inf Coverage Results" MODIFIED="1579525572733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$sdnet.coverage" NAME="sdnet Coverage Results" MODIFIED="1582130720512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/PSD_Net_MultiModalVersion$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1593467120190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1583526412988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation_liverct.coverage" NAME="test_unet_segmentation_liverct Coverage Results" MODIFIED="1579531955516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
