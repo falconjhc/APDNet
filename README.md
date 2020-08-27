@@ -27,9 +27,6 @@ To run an test, execute `experiment.py` as follows:
 python experiment.py --config myconfiguration --split 0 --l_mix 1-1 --test True
 ```
 
-The code is written in [Keras] version 2.1.6 with [tensorflow] 1.4.0.
-
-
 Citation
 
 If you use this code for your research, please cite our paper:

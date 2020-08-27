@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1fbedab-63df-4489-bc8c-596aee5e6bb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/kits/psdnet_config_kits-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/kits/psdnet_config_kits-base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_executors/psdnet_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/psdnet_executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,7 +453,7 @@
       <workItem from="1593467109151" duration="371000" />
       <workItem from="1593467617519" duration="253000" />
       <workItem from="1593513924579" duration="31000" />
-      <workItem from="1598526117817" duration="274000" />
+      <workItem from="1598526117817" duration="567000" />
     </task>
     <servers />
   </component>
