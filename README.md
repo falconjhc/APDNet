@@ -17,12 +17,12 @@ The structure of this project is the following:
 
 To define a new data loader, extend class `base_loader.Loader`, and register the loader in `loader_factory.py`. The datapath is specified in `parameters.py`.
 
-To run an experiment, execute `experiment.py`, passing the configuration filename and the split number as runtime parameters:
+To run an experiment, execute `experiment.py`, passing the configuration filename, the split number as runtime parameters, and the pathology annotation amount 'l-mix a-b', where 'a' denotes the amount of volumes among the full training data, while 'b' represents the amount of data in each volume:
 ```
 python experiment.py --config myconfiguration --split 0 --l_mix 1-1
 ```
 
-To run an test, execute `experiment.py`, passing the configuration filename and the split number as runtime parameters:
+To run an test, execute `experiment.py` as follows:
 ```
 python experiment.py --config myconfiguration --split 0 --l_mix 1-1 --test True
 ```
