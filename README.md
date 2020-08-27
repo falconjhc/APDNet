@@ -41,4 +41,3 @@ If you use this code for your research, please cite our paper:
 [tensorflow]: https://www.tensorflow.org/
 [MICCAI-2020]: https://miccai2020.org/en/
 [DART-2020]: https://sites.google.com/view/dart2020/
- -->
