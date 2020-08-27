@@ -2,7 +2,7 @@
 
 Implementation of the **APDNet** model to perform disentanglement of anatomical, modality, and pathology information in medical images. For further details please see our [paper], accepted in [MICCAI-2020 Workshop: DART].
 
-Python dependencies to run the code is listed in the file requirements.txt.
+Python dependencies to run the code is listed in the file ;requirements.txt'.
 
 The structure of this project is the following:
 
