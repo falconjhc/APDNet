@@ -2,6 +2,8 @@
 
 Implementation of the **APDNet** model to perform disentanglement of anatomical, modality, and pathology information in medical images. For further details please see our [paper], accepted in [MICCAI-2020 Workshop: DART].
 
+Python dependencies to run the code is listed in the file ;requirements.txt'.
+
 The structure of this project is the following:
 
 * **configuration**: package containing configuration parameters for running an experiment.
@@ -15,9 +17,14 @@ The structure of this project is the following:
 
 To define a new data loader, extend class `base_loader.Loader`, and register the loader in `loader_factory.py`. The datapath is specified in `parameters.py`.
 
-To run an experiment, execute `experiment.py`, passing the configuration filename and the split number as runtime parameters:
+To run an experiment, execute `experiment.py`, passing the configuration filename, the split number as runtime parameters, and the pathology annotation amount 'l-mix a-b', where 'a' denotes the amount of volumes among the full training data, while 'b' represents the amount of data in each volume:
 ```
 python experiment.py --config myconfiguration --split 0 --l_mix 1-1
+```
+
+To run an test, execute `experiment.py` as follows:
+```
+python experiment.py --config myconfiguration --split 0 --l_mix 1-1 --test True
 ```
 
 The code is written in [Keras] version 2.1.6 with [tensorflow] 1.4.0.
@@ -41,4 +48,3 @@ If you use this code for your research, please cite our paper:
 [tensorflow]: https://www.tensorflow.org/
 [MICCAI-2020]: https://miccai2020.org/en/
 [DART-2020]: https://sites.google.com/view/dart2020/
- -->
