@@ -160,57 +160,57 @@ class SDNetExecutor(Executor):
         scn_gen = utils.data_utils.generator(self.conf.batch_size, self.conf.seed, 'no_overflow', self.data_unlabelled.scanner)
         return itertools.zip_longest(img_gen, anato_msk_gen, patho_msk_gen, scn_gen)
 
-    def _load_unlabelled_data(self, data_type):
-        '''
-        Create a Data object with unlabelled data. This will be used to train the unlabelled path of the
-        generators and produce fake masks for training the discriminator
-        :param data_type:   can be one ['ul', 'all']. The second includes images that have masks.
-        :return:            a data object
-        '''
-        log.info('Loading unlabelled images of type %s' % data_type)
-        log.info('Estimating number of unlabelled images from %s data' % self.conf.dataset_name)
-
-        num_all_volumes = len(self.loader.splits()[self.conf.split]['training'])
-        ul_mix = 1 if self.conf.ul_mix > 1 else self.conf.ul_mix
-
-        log.info('Initialising unlabelled datagen. Loading %s data' % self.conf.dataset_name)
-        if data_type == 'ul':
-            ul_data = self.loader.load_unlabelled_data(self.conf.split, 'training', modality=self.conf.modality, segmentation_option=self.conf.segmentation_option)
-            ul_data.crop(self.conf.input_shape[:2])
-            self.conf.num_ul_volumes = int(num_all_volumes * ul_mix)
-            log.info('Sampling %d unlabelled images out of total %d.' % (self.conf.num_ul_volumes, num_all_volumes))
-            ul_data.sample_by_volume(self.conf.num_ul_volumes, seed=self.conf.seed)
-        elif data_type == 'all':
-            ul_data = self.loader.load_all_data(self.conf.split, 'training', modality=self.conf.modality, segmentation_option=self.conf.segmentation_option)
-            ul_data.crop(self.conf.input_shape[:2])
-        else:
-            raise Exception('Invalid data_type: %s' % str(data_type))
-
-        # Use 1200 unlabelled images maximum, to be comparable with the total number of labelled images of ACDC (~1200)
-        # for rohan, it is 450
-        if self.conf.dataset_name=='acdc':
-            max_ul_images_limit = 1200
-        elif self.conf.dataset_name == 'rohan':
-            max_ul_images_limit = 450
-        elif self.conf.dataset_name == 'miccai':
-            max_ul_images_limit = 150
-        elif self.conf.dataset_name == 'cmr':
-            max_ul_images_limit = 200
-        elif self.conf.dataset_name =='liverct':
-            max_ul_images_limit = 3500
-        elif self.conf.dataset_name == 'isles':
-            max_ul_images_limit = 2100
-        max_ul_images = max_ul_images_limit # if self.conf.ul_mix <= 1 else max_ul_images_limit * self.conf.ul_mix
-        # max_ul_images = max_ul_images_limit if self.conf.ul_mix > 1 else max_ul_images_limit * self.conf.ul_mix
-        ##########################?????????????????????#################################
-        ##########################?????????????????????#################################
-        ##########################?????????????????????#################################
-
-        if ul_data.size() > max_ul_images:
-            samples_per_volume = int(np.ceil(max_ul_images / ul_data.num_volumes))
-            ul_data.sample_per_volume(samples_per_volume, seed=self.conf.seed)
-        log.info('Unlabeled Data Size: %d' % ul_data.size())
-        return ul_data
+    # def _load_unlabelled_data(self, data_type):
+    #     '''
+    #     Create a Data object with unlabelled data. This will be used to train the unlabelled path of the
+    #     generators and produce fake masks for training the discriminator
+    #     :param data_type:   can be one ['ul', 'all']. The second includes images that have masks.
+    #     :return:            a data object
+    #     '''
+    #     log.info('Loading unlabelled images of type %s' % data_type)
+    #     log.info('Estimating number of unlabelled images from %s data' % self.conf.dataset_name)
+    #
+    #     num_all_volumes = len(self.loader.splits()[self.conf.split]['training'])
+    #     # ul_mix = 1 if self.conf.ul_mix > 1 else self.conf.ul_mix
+    #
+    #     log.info('Initialising unlabelled datagen. Loading %s data' % self.conf.dataset_name)
+    #     if data_type == 'ul':
+    #         ul_data = self.loader.load_unlabelled_data(self.conf.split, 'training', modality=self.conf.modality, segmentation_option=self.conf.segmentation_option)
+    #         ul_data.crop(self.conf.input_shape[:2])
+    #         self.conf.num_ul_volumes = int(num_all_volumes * ul_mix)
+    #         log.info('Sampling %d unlabelled images out of total %d.' % (self.conf.num_ul_volumes, num_all_volumes))
+    #         ul_data.sample_by_volume(self.conf.num_ul_volumes, seed=self.conf.seed)
+    #     elif data_type == 'all':
+    #         ul_data = self.loader.load_all_data(self.conf.split, 'training', modality=self.conf.modality, segmentation_option=self.conf.segmentation_option)
+    #         ul_data.crop(self.conf.input_shape[:2])
+    #     else:
+    #         raise Exception('Invalid data_type: %s' % str(data_type))
+    #
+    #     # Use 1200 unlabelled images maximum, to be comparable with the total number of labelled images of ACDC (~1200)
+    #     # for rohan, it is 450
+    #     if self.conf.dataset_name=='acdc':
+    #         max_ul_images_limit = 1200
+    #     elif self.conf.dataset_name == 'rohan':
+    #         max_ul_images_limit = 450
+    #     elif self.conf.dataset_name == 'miccai':
+    #         max_ul_images_limit = 150
+    #     elif self.conf.dataset_name == 'cmr':
+    #         max_ul_images_limit = 200
+    #     elif self.conf.dataset_name =='liverct':
+    #         max_ul_images_limit = 3500
+    #     elif self.conf.dataset_name == 'isles':
+    #         max_ul_images_limit = 2100
+    #     max_ul_images = max_ul_images_limit # if self.conf.ul_mix <= 1 else max_ul_images_limit * self.conf.ul_mix
+    #     # max_ul_images = max_ul_images_limit if self.conf.ul_mix > 1 else max_ul_images_limit * self.conf.ul_mix
+    #     ##########################?????????????????????#################################
+    #     ##########################?????????????????????#################################
+    #     ##########################?????????????????????#################################
+    #
+    #     if ul_data.size() > max_ul_images:
+    #         samples_per_volume = int(np.ceil(max_ul_images / ul_data.num_volumes))
+    #         ul_data.sample_per_volume(samples_per_volume, seed=self.conf.seed)
+    #     log.info('Unlabeled Data Size: %d' % ul_data.size())
+    #     return ul_data
 
     def _init_disciminator_mask_generator(self, batch_size=None, sample=False):
         """

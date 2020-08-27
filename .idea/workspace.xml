@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fbedab-63df-4489-bc8c-596aee5e6bb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/sdnet_config_multimodalcardiac-base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/sdnet_config_multimodalcardiac-test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration/multimodalcardiac/unet_config_multimodalcardiac.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loaders/multimodalcardiac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InfarctionSeg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InfarctionSeg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/callbacks/sdnet_image_callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks/sdnet_image_callback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/rohan/sdnet_config_rohan-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/rohan/sdnet_config_rohan-base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/rohan/unet_config_rohan.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/rohan/unet_config_rohan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/costs.py" beforeDir="false" afterPath="$PROJECT_DIR$/costs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/kits/psdnet_config_kits-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/kits/psdnet_config_kits-base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/liverct/psdnet_config_liverct-test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/toy/psdnet_config_toy-test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/base_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/base_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/loader_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/loader_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_executors/base_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/base_executor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_executors/sdnet_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/sdnet_executor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/sdnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sdnet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_executors/psdnet_executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_executors/psdnet_executor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="4597faf4-015e-48d0-83b5-b3d427e42ab4" />
   <component name="ProjectId" id="1WREkfueHMhlNPpn3ESKbhMHsy8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -220,6 +209,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -469,11 +459,12 @@
       <workItem from="1593467109151" duration="371000" />
       <workItem from="1593467617519" duration="253000" />
       <workItem from="1593513924579" duration="31000" />
+      <workItem from="1598526117817" duration="274000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -483,96 +474,60 @@
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state x="353" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593420739304" />
-    <state x="-1071" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1636.1027@-1366.23.1366.1001" timestamp="1585873441618" />
-    <state x="354" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586038384856" />
-    <state x="354" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585569599484" />
     <state width="1590" height="374" key="GridCell.Tab.0.bottom" timestamp="1593467488346">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
-    <state width="1594" height="2" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890711" />
-    <state width="1596" height="403" key="GridCell.Tab.0.bottom/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422019" />
-    <state width="1594" height="2" key="GridCell.Tab.0.bottom/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
     <state width="1590" height="374" key="GridCell.Tab.0.center" timestamp="1593467488346">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
-    <state width="1594" height="2" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890710" />
-    <state width="1596" height="403" key="GridCell.Tab.0.center/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
-    <state width="1594" height="2" key="GridCell.Tab.0.center/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
     <state width="1590" height="374" key="GridCell.Tab.0.left" timestamp="1593467488345">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488345" />
-    <state width="1594" height="2" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890710" />
-    <state width="1596" height="403" key="GridCell.Tab.0.left/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
-    <state width="1594" height="2" key="GridCell.Tab.0.left/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363585" />
     <state width="1590" height="374" key="GridCell.Tab.0.right" timestamp="1593467488346">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488346" />
-    <state width="1594" height="2" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036890711" />
-    <state width="1596" height="403" key="GridCell.Tab.0.right/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422018" />
-    <state width="1594" height="2" key="GridCell.Tab.0.right/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363586" />
     <state width="1590" height="374" key="GridCell.Tab.1.bottom" timestamp="1593467488348">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488348" />
-    <state width="1594" height="486" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
-    <state width="1596" height="403" key="GridCell.Tab.1.bottom/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
-    <state width="1594" height="486" key="GridCell.Tab.1.bottom/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
     <state width="1590" height="374" key="GridCell.Tab.1.center" timestamp="1593467488347">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
-    <state width="1594" height="486" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
-    <state width="1596" height="403" key="GridCell.Tab.1.center/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
-    <state width="1594" height="486" key="GridCell.Tab.1.center/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
     <state width="1590" height="374" key="GridCell.Tab.1.left" timestamp="1593467488347">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
-    <state width="1594" height="486" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
-    <state width="1596" height="403" key="GridCell.Tab.1.left/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422019" />
-    <state width="1594" height="486" key="GridCell.Tab.1.left/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363567" />
     <state width="1590" height="374" key="GridCell.Tab.1.right" timestamp="1593467488347">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state width="1590" height="374" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467488347" />
-    <state width="1594" height="486" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586036726881" />
-    <state width="1596" height="403" key="GridCell.Tab.1.right/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567422020" />
-    <state width="1594" height="486" key="GridCell.Tab.1.right/0.23.1636.1027@0.23.1636.1027" timestamp="1586039363568" />
     <state x="474" y="267" key="PyMappingSimpleResolveDialog" timestamp="1593467236088">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state x="474" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593467236088" />
-    <state x="475" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586024918888" />
-    <state x="476" y="267" key="PyMappingSimpleResolveDialog/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585566964337" />
     <state x="57" y="187" width="1176" height="722" key="SettingsEditor" timestamp="1593395917158">
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state x="-1318" y="183" width="1176" height="722" key="SettingsEditor/-1366.23.1366.1001/0.23.1633.1027@-1366.23.1366.1001" timestamp="1593181628902" />
     <state x="57" y="187" key="SettingsEditor/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593395917158" />
-    <state x="191" y="166" key="SettingsEditor/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585404922702" />
-    <state x="-1328" y="23" width="1328" height="922" maximized="true" key="dock-window-1" timestamp="1593513954773">
+    <state x="-1366" y="23" width="1366" height="1001" key="dock-window-1" timestamp="1598526394013">
       <screen x="-1366" y="23" width="1366" height="1001" />
     </state>
+    <state x="-1366" y="23" width="1366" height="1001" key="dock-window-1/-1366.23.1366.1001/0.23.1620.1027@0.23.1620.1027" timestamp="1598526394013" />
     <state x="-1328" y="23" width="1328" height="922" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593513954773" />
-    <state x="-1366" y="91" width="1300" height="980" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586945085803" />
-    <state x="-1360" y="37" width="1315" height="949" maximized="true" key="dock-window-1/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585567427795" />
-    <state x="0" y="49" width="1366" height="1001" key="dock-window-1/0.23.1636.1027@0.23.1636.1027" timestamp="1585748129567" />
-    <state x="0" y="49" width="1366" height="1001" key="dock-window-1/0.23.1638.1027@0.23.1638.1027" timestamp="1585042361438" />
     <state x="-1366" y="35" width="1351" height="975" maximized="true" key="dock-window-2" timestamp="1593354530046">
       <screen x="-1366" y="23" width="1366" height="1001" />
     </state>
     <state x="-1366" y="35" width="1351" height="975" maximized="true" key="dock-window-2/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593354530046" />
-    <state x="-1366" y="23" width="1366" height="1001" key="dock-window-2/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586028801151" />
-    <state x="337" y="227" width="1001" height="555" key="find.popup" timestamp="1586034470426">
-      <screen x="0" y="23" width="1636" height="1027" />
+    <state x="-985" y="278" width="604" height="582" key="find.popup" timestamp="1598526379093">
+      <screen x="-1366" y="23" width="1366" height="1001" />
     </state>
-    <state x="337" y="227" width="1001" height="555" key="find.popup/-1366.23.1366.1001/0.23.1636.1027@0.23.1636.1027" timestamp="1586034470426" />
-    <state x="337" y="227" width="1002" height="555" key="find.popup/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585479053714" />
-    <state x="337" y="227" width="1002" height="555" key="find.popup/0.23.1638.1027@0.23.1638.1027" timestamp="1584878088287" />
+    <state x="-985" y="278" width="604" height="582" key="find.popup/-1366.23.1366.1001/0.23.1620.1027@0.23.1620.1027" timestamp="1598526379093" />
     <state x="-823" y="281" width="585" height="525" key="ftp.server.browser" timestamp="1593181625371">
       <screen x="-1366" y="23" width="1366" height="1001" />
     </state>
@@ -581,7 +536,6 @@
       <screen x="0" y="23" width="1633" height="1027" />
     </state>
     <state x="390" y="250" width="856" height="694" key="search.everywhere.popup/-1366.23.1366.1001/0.23.1633.1027@0.23.1633.1027" timestamp="1593357004963" />
-    <state x="391" y="250" width="858" height="694" key="search.everywhere.popup/-1366.23.1366.1001/0.23.1638.1027@0.23.1638.1027" timestamp="1585406033612" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,7 +567,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiment.py</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="144" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -677,12 +631,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation.coverage" NAME="test_unet_segmentation Coverage Results" MODIFIED="1579453296252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSD_Net$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1593396402251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation_inf.coverage" NAME="test_unet_segmentation_inf Coverage Results" MODIFIED="1579525572733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InfarctionSeg$sdnet.coverage" NAME="sdnet Coverage Results" MODIFIED="1582130720512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/PSD_Net_MultiModalVersion$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1593467120190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InfarctionSeg$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1583526412988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation_inf.coverage" NAME="test_unet_segmentation_inf Coverage Results" MODIFIED="1579525572733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation.coverage" NAME="test_unet_segmentation Coverage Results" MODIFIED="1579453296252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PSD_Net$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1593396402251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/InfarctionSeg$test_unet_segmentation_liverct.coverage" NAME="test_unet_segmentation_liverct Coverage Results" MODIFIED="1579531955516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InfarctionSeg$sdnet.coverage" NAME="sdnet Coverage Results" MODIFIED="1582130720512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
 </project>

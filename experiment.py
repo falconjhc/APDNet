@@ -34,7 +34,6 @@ class Experiment(object):
     Optional command line arguments are:
         --test          only test a model defined by the configuration file
         --l_mix         float [0, 1]. Sets the amount of labelled data.
-        --ul_mix        float [0, 1]. Sets the amount of unlabelled data.
         --augment       Use data augmentation
         --modality      Set the modality to load. Used in multimodal datasets.
     """
@@ -63,8 +62,8 @@ class Experiment(object):
 
         config_script = args.config
         l_mix  = None if not args.l_mix else args.l_mix
-        ul_mix = None if not args.ul_mix else args.ul_mix
-        modality = None if not args.modality else args.modality
+        # ul_mix = None if not args.ul_mix else args.ul_mix
+        # modality = None if not args.modality else args.modality
 
         config_dict = importlib.import_module('configuration.'+ data_type+ '.' + config_script).get()
         config = EasyDict(config_dict)
@@ -77,12 +76,12 @@ class Experiment(object):
             pat_sup_pctg = int(float(l_mix.split('-')[0])*100)
             per_volume_pctg = int(float(l_mix.split('-')[1])*100)
             config.folder += '-%dSupPat-Partial%dPerVol' % (pat_sup_pctg, per_volume_pctg)
-        if ul_mix is not None:
-            config.ul_mix = float(ul_mix)
-            config.folder += '_ul%s' % ul_mix
-        if modality is not None:
-            config.modality = modality
-            config.folder += '_' + modality
+        # if ul_mix is not None:
+        #     config.ul_mix = float(ul_mix)
+        #     config.folder += '_ul%s' % ul_mix
+        # if modality is not None:
+        #     config.modality = modality
+        #     config.folder += '_' + modality
 
 
         config.folder += '_split%s' % split
@@ -125,9 +124,9 @@ class Experiment(object):
         parser.add_argument('--test', help='Evaluate the model on test data', type=bool)
         parser.add_argument('--split', help='Data split to run.', required=True)
         parser.add_argument('--l_mix', help='Percentage of labelled data')
-        parser.add_argument('--ul_mix', help='Percentage of unlabelled data')
+        # parser.add_argument('--ul_mix', help='Percentage of unlabelled data')
         parser.add_argument('--augment', help='Augment training data', type=bool)
-        parser.add_argument('--modality', help='Modality to load', choices=['MR', 'CT', 'all', 'cine', 'BOLD'])
+        # parser.add_argument('--modality', help='Modality to load', choices=['MR', 'CT', 'all', 'cine', 'BOLD'])
 
 
 

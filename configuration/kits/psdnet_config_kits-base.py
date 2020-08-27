@@ -29,7 +29,6 @@ params = {
     'num_pathology_masks': loader.KitsLoader().num_patho_masks,
     'out_pathology_channels': loader.KitsLoader().num_patho_masks + 1,
     # 'l_mix': '1.-1.', # percentage of the labeled data to be used during the training
-    'ul_mix': 0, # percentage of the unlabled data to be used during the training
     'rounding': 'encoder',
     'num_mask_channels': 8,
     'num_z': 8,
