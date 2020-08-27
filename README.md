@@ -32,7 +32,7 @@ Citation
 If you use this code for your research, please cite our paper:
 
 ```
-@incollection{jiang2020pathologudisentanglement,
+@incollection{jiang2020pathology,
   title={Semi-supervised Pathology Segmentation with Disentangled Representations},
   author={Haochuan, Jiang and Chartsias, Agisilaos and Papanastasiou, Giorgos and Semple, Scott and Dweck, Mark and and Dharmakumar, Rohan and Tsaftaris, Sotirios A},
   booktitle={Domain Adaptation and Representation Transfer},
