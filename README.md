@@ -23,7 +23,7 @@ python experiment.py --config myconfiguration --split 0 --l_mix 1-1
 The code is written in [Keras] version 2.1.6 with [tensorflow] 1.4.0.
 
 
-<!-- ## Citation
+Citation
 
 If you use this code for your research, please cite our paper:
 
